@@ -1,8 +1,6 @@
 package br.com.rd.rdevs.conta.model;
 
-import org.jetbrains.annotations.NotNull;
-
-public abstract class Conta  implements Comparable<Conta>{
+public abstract class Conta implements Comparable <Conta>{
     private static int identificador = 0;
     private int numero;
     private String titular;
@@ -146,10 +144,11 @@ public abstract class Conta  implements Comparable<Conta>{
 
     }
 
-    @Override
 
-    public int compareTo(@NotNull Conta outraConta) {
+    @Override
+    public int /*umaConta*/ compareTo(Conta outraConta) {
 
         return this.titular.compareTo(outraConta.titular);
     }
+
 }
