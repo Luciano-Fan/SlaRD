@@ -8,6 +8,7 @@ public class ExJavaLang {
         int quantidadeChars = testeString.length();
 
         boolean vazio = testeString.isEmpty();
+
         String[] split = testeString.split(" ");
 
         System.out.println(" Vazio: " + vazio + " Contains: " + testeString.contains("String") + " Quantidade de caracteres: " + quantidadeChars );
