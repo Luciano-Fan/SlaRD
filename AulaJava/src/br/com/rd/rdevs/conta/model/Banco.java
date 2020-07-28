@@ -13,7 +13,7 @@ public class Banco {
         this.contas = new ArrayList<>();
         this.contaMap = new HashMap<>();
     }
-    
+
     public void adiciona(Conta conta) {
         this.contas.add(conta);
         this.contaMap.put(conta.getTitular(),conta);
